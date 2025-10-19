@@ -33,7 +33,7 @@ jobs:
       with:
         test-name: Exercise 1 - Create Shopping List
         setup-command: ''
-        command: python -m pytest test_lab2.py::test_exercise1_type test_lab2.py::test_exercise1_length test_lab2.py::test_exercise1_content_type test_lab2.py::test_exercise1_not_empty -v
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise1_type test_lab2.py::TestLab2::test_exercise1_length test_lab2.py::TestLab2::test_exercise1_content_type test_lab2.py::TestLab2::test_exercise1_not_empty -v
         timeout: 10
         max-score: 4
 
@@ -43,7 +43,7 @@ jobs:
       with:
         test-name: Exercise 2 - Access List Elements
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise2_basic test_lab2.TestLab2.test_exercise2_different_list test_lab2.TestLab2.test_exercise2_strings
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise2_basic test_lab2.py::TestLab2::test_exercise2_different_list test_lab2.py::TestLab2::test_exercise2_strings -v
         timeout: 10
         max-score: 4
 
@@ -53,7 +53,7 @@ jobs:
       with:
         test-name: Exercise 3 - List Length and Membership
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise3_found test_lab2.TestLab2.test_exercise3_not_found test_lab2.TestLab2.test_exercise3_empty_list test_lab2.TestLab2.test_exercise3_numbers
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise3_found test_lab2.py::TestLab2::test_exercise3_not_found test_lab2.py::TestLab2::test_exercise3_empty_list test_lab2.py::TestLab2::test_exercise3_numbers -v
         timeout: 10
         max-score: 5
 
@@ -63,7 +63,7 @@ jobs:
       with:
         test-name: Exercise 4 - Append Items
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise4_basic test_lab2.TestLab2.test_exercise4_numbers test_lab2.TestLab2.test_exercise4_empty_list test_lab2.TestLab2.test_exercise4_order
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise4_basic test_lab2.py::TestLab2::test_exercise4_numbers test_lab2.py::TestLab2::test_exercise4_empty_list test_lab2.py::TestLab2::test_exercise4_order -v
         timeout: 10
         max-score: 6
 
@@ -73,7 +73,7 @@ jobs:
       with:
         test-name: Exercise 5 - Insert at Position
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise5_middle test_lab2.TestLab2.test_exercise5_beginning test_lab2.TestLab2.test_exercise5_end test_lab2.TestLab2.test_exercise5_numbers
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise5_middle test_lab2.py::TestLab2::test_exercise5_beginning test_lab2.py::TestLab2::test_exercise5_end test_lab2.py::TestLab2::test_exercise5_numbers -v
         timeout: 10
         max-score: 6
 
@@ -83,7 +83,7 @@ jobs:
       with:
         test-name: Exercise 6 - Collect All Items
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise6_basic test_lab2.TestLab2.test_exercise6_single test_lab2.TestLab2.test_exercise6_numbers
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise6_basic test_lab2.py::TestLab2::test_exercise6_single test_lab2.py::TestLab2::test_exercise6_numbers -v
         timeout: 10
         max-score: 4
 
@@ -93,7 +93,7 @@ jobs:
       with:
         test-name: Exercise 7 - Sum All Numbers
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise7_basic test_lab2.TestLab2.test_exercise7_single test_lab2.TestLab2.test_exercise7_negative test_lab2.TestLab2.test_exercise7_floats
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise7_basic test_lab2.py::TestLab2::test_exercise7_single test_lab2.py::TestLab2::test_exercise7_negative test_lab2.py::TestLab2::test_exercise7_floats -v
         timeout: 10
         max-score: 5
 
@@ -103,7 +103,7 @@ jobs:
       with:
         test-name: Exercise 8 - Count Specific Value
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise8_basic test_lab2.TestLab2.test_exercise8_not_found test_lab2.TestLab2.test_exercise8_all_same test_lab2.TestLab2.test_exercise8_strings
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise8_basic test_lab2.py::TestLab2::test_exercise8_not_found test_lab2.py::TestLab2::test_exercise8_all_same test_lab2.py::TestLab2::test_exercise8_strings -v
         timeout: 10
         max-score: 5
 
@@ -113,7 +113,7 @@ jobs:
       with:
         test-name: Exercise 9 - Filter by Threshold
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise9_basic test_lab2.TestLab2.test_exercise9_none_pass test_lab2.TestLab2.test_exercise9_all_pass test_lab2.TestLab2.test_exercise9_exact_threshold
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise9_basic test_lab2.py::TestLab2::test_exercise9_none_pass test_lab2.py::TestLab2::test_exercise9_all_pass test_lab2.py::TestLab2::test_exercise9_exact_threshold -v
         timeout: 10
         max-score: 6
 
@@ -123,7 +123,7 @@ jobs:
       with:
         test-name: Exercise 10 - Generate Number List
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise10_basic test_lab2.TestLab2.test_exercise10_single test_lab2.TestLab2.test_exercise10_large_range test_lab2.TestLab2.test_exercise10_negative
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise10_basic test_lab2.py::TestLab2::test_exercise10_single test_lab2.py::TestLab2::test_exercise10_large_range test_lab2.py::TestLab2::test_exercise10_negative -v
         timeout: 10
         max-score: 5
 
@@ -133,7 +133,7 @@ jobs:
       with:
         test-name: Exercise 11 - Read Entire File
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise11_shopping test_lab2.TestLab2.test_exercise11_is_string test_lab2.TestLab2.test_exercise11_not_empty
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise11_shopping test_lab2.py::TestLab2::test_exercise11_is_string test_lab2.py::TestLab2::test_exercise11_not_empty -v
         timeout: 10
         max-score: 4
 
@@ -143,7 +143,7 @@ jobs:
       with:
         test-name: Exercise 12 - Count Lines
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise12_shopping test_lab2.TestLab2.test_exercise12_words test_lab2.TestLab2.test_exercise12_numbers
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise12_shopping test_lab2.py::TestLab2::test_exercise12_words test_lab2.py::TestLab2::test_exercise12_numbers -v
         timeout: 10
         max-score: 5
 
@@ -153,7 +153,7 @@ jobs:
       with:
         test-name: Exercise 13 - Parse Numbers from File
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise13_basic test_lab2.TestLab2.test_exercise13_first_number test_lab2.TestLab2.test_exercise13_all_numbers test_lab2.TestLab2.test_exercise13_contains_expected
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise13_basic test_lab2.py::TestLab2::test_exercise13_first_number test_lab2.py::TestLab2::test_exercise13_all_numbers test_lab2.py::TestLab2::test_exercise13_contains_expected -v
         timeout: 10
         max-score: 5
 
@@ -163,7 +163,7 @@ jobs:
       with:
         test-name: Exercise 14 - Write List to File
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise14_creates_file test_lab2.TestLab2.test_exercise14_content test_lab2.TestLab2.test_exercise14_returns_success test_lab2.TestLab2.test_exercise14_line_count
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise14_creates_file test_lab2.py::TestLab2::test_exercise14_content test_lab2.py::TestLab2::test_exercise14_returns_success test_lab2.py::TestLab2::test_exercise14_line_count -v
         timeout: 10
         max-score: 6
 
@@ -173,7 +173,7 @@ jobs:
       with:
         test-name: Exercise 15 - Filter File Numbers
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise15_basic test_lab2.TestLab2.test_exercise15_high_threshold test_lab2.TestLab2.test_exercise15_all_pass test_lab2.TestLab2.test_exercise15_none_pass
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise15_basic test_lab2.py::TestLab2::test_exercise15_high_threshold test_lab2.py::TestLab2::test_exercise15_all_pass test_lab2.py::TestLab2::test_exercise15_none_pass -v
         timeout: 10
         max-score: 5
 
@@ -183,7 +183,7 @@ jobs:
       with:
         test-name: Exercise 16 - Count Words Starting With Letter
         setup-command: ''
-        command: python -m unittest test_lab2.TestLab2.test_exercise16_letter_a test_lab2.TestLab2.test_exercise16_letter_b test_lab2.TestLab2.test_exercise16_letter_c test_lab2.TestLab2.test_exercise16_uppercase test_lab2.TestLab2.test_exercise16_no_match
+        command: python -m pytest test_lab2.py::TestLab2::test_exercise16_letter_a test_lab2.py::TestLab2::test_exercise16_letter_b test_lab2.py::TestLab2::test_exercise16_letter_c test_lab2.py::TestLab2::test_exercise16_uppercase test_lab2.py::TestLab2::test_exercise16_no_match -v
         timeout: 10
         max-score: 5
 
