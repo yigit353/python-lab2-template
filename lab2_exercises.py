@@ -27,7 +27,8 @@ def exercise1():
     Example:
         ['milk', 'eggs', 'bread', 'cheese', 'apples']
     """
-    # TODO: Create a list with 5 shopping items
+    # TODO: Create any list with 5 shopping items
+    # HINT: Make sure that the list contains exactly 5 "string" elements not integers.
     shopping_list = []
     
     return shopping_list
@@ -50,6 +51,10 @@ def exercise2(items):
         exercise2(['a', 'b', 'c', 'd', 'e']) returns ['a', 'e', 'c']
     """
     # TODO: Access the correct elements using indexing
+    # HINT: Remember you return a list with the three elements in order.
+    # You can do it multiple ways, but make sure to follow the order in the return.
+    # You access the elements of the input list 'items' and store them in 'result' list.
+
     result = []
     
     return result
@@ -74,6 +79,9 @@ def exercise3(items, search_item):
         returns {'count': 3, 'found': True}
     """
     # TODO: Use len() and 'in' operator
+    # HINT: You use dictionary if you want to return multiple values.
+    # Don't change the return statement structure.
+
     count = 0
     found = False
     
@@ -149,6 +157,8 @@ def exercise6(items):
         returns ['Item: apple', 'Item: banana', 'Item: cherry']
     """
     # TODO: Use a for loop to create formatted strings
+    # HINT: How do you combine (concat) strings with variables?
+
     result = []
     
     return result
@@ -242,6 +252,8 @@ def exercise10(start, end):
         exercise10(5, 10) returns [5, 6, 7, 8, 9, 10]
     """
     # TODO: Use range() and convert to list
+    # HINT: you convert a range to a list using list(range(...))
+
     result = []
     
     return result
@@ -337,6 +349,7 @@ def exercise14(filename, items):
         banana
     """
     # TODO: Use 'with open()' in write mode to write each item
+    # HINT: how do you combine a string and a newline character?
     
     return "Success"
 
@@ -389,6 +402,9 @@ def exercise16(filename, letter):
         and letter is 'a', returns 3
     """
     # TODO: Read file, check first letter of each word (case-insensitive)
+    # HINT: To lowercase a string, use str.lower() for example: letter.lower()
+    # HINT: To check if a string starts with a letter, use str.startswith(),
+    # for example: word.startswith(letter)
     count = 0
     
     return count
